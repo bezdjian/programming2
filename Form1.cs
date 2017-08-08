@@ -16,5 +16,16 @@ namespace interaction
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String msg = "Password is: " + tbPasswd.Text;
+            MessageBox.Show(msg, "Message");
+        }
+
+        private void btnShowMe_Click(object sender, EventArgs e)
+        {
+            lblShowPasswd.Text = tbPasswd.Text;
+        }
     }
 }
