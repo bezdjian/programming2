@@ -1,0 +1,16 @@
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\fargtest-1.4\fargtest-1.4\bin\Debug\fargtest-1.4.exe.config
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\fargtest-1.4\fargtest-1.4\bin\Debug\fargtest-1.4.exe
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\fargtest-1.4\fargtest-1.4\bin\Debug\fargtest-1.4.pdb
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\fargtest-1.4\fargtest-1.4\obj\Debug\fargtest_1._4.Form1.resources
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\fargtest-1.4\fargtest-1.4\obj\Debug\fargtest_1._4.Properties.Resources.resources
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\fargtest-1.4\fargtest-1.4\obj\Debug\fargtest-1.4.csproj.GenerateResource.Cache
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\fargtest-1.4\fargtest-1.4\obj\Debug\fargtest-1.4.exe
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\fargtest-1.4\fargtest-1.4\obj\Debug\fargtest-1.4.pdb
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\fargtest-1.4\bin\Debug\fargtest-1.4.exe.config
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\fargtest-1.4\bin\Debug\fargtest-1.4.exe
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\fargtest-1.4\bin\Debug\fargtest-1.4.pdb
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\fargtest-1.4\obj\Debug\fargtest_1._4.Form1.resources
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\fargtest-1.4\obj\Debug\fargtest_1._4.Properties.Resources.resources
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\fargtest-1.4\obj\Debug\fargtest-1.4.csproj.GenerateResource.Cache
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\fargtest-1.4\obj\Debug\fargtest-1.4.exe
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\fargtest-1.4\obj\Debug\fargtest-1.4.pdb
