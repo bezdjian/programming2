@@ -1,0 +1,9 @@
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\programming2\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\programming2\bin\Debug\WindowsFormsApp1.exe
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\programming2\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\programming2\obj\Debug\CheckboxesAndRadios.csprojResolveAssemblyReference.cache
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\programming2\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\programming2\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\programming2\obj\Debug\CheckboxesAndRadios.csproj.GenerateResource.Cache
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\programming2\obj\Debug\WindowsFormsApp1.exe
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\programming2\obj\Debug\WindowsFormsApp1.pdb

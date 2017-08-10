@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1.csproj", "{65B31643-3BA0-442E-A109-560B2E10712D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckboxesAndRadios", "CheckboxesAndRadios.csproj", "{51963023-B1ED-4A4A-A227-58B253E6A92F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{65B31643-3BA0-442E-A109-560B2E10712D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B31643-3BA0-442E-A109-560B2E10712D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B31643-3BA0-442E-A109-560B2E10712D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51963023-B1ED-4A4A-A227-58B253E6A92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51963023-B1ED-4A4A-A227-58B253E6A92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51963023-B1ED-4A4A-A227-58B253E6A92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51963023-B1ED-4A4A-A227-58B253E6A92F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
