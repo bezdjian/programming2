@@ -1,0 +1,10 @@
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\bin\Debug\MDI-1.12.exe.config
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\bin\Debug\MDI-1.12.exe
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\bin\Debug\MDI-1.12.pdb
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\obj\Debug\MDI_1._12.Form1.resources
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\obj\Debug\MDI_1._12.Properties.Resources.resources
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\obj\Debug\MDI-1.12.csproj.GenerateResource.Cache
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\obj\Debug\MDI-1.12.exe
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\obj\Debug\MDI-1.12.pdb
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\obj\Debug\MDI-1.12.csprojResolveAssemblyReference.cache
+c:\users\harout.bezdjian\documents\visual studio 2017\Projects\MDI-1.12\obj\Debug\MDI_1._12.childForm.resources
