@@ -1,0 +1,8 @@
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\menus-1.11\bin\Debug\menus-1.11.exe.config
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\menus-1.11\bin\Debug\menus-1.11.exe
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\menus-1.11\bin\Debug\menus-1.11.pdb
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\menus-1.11\obj\Debug\menus_1._11.Properties.Resources.resources
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\menus-1.11\obj\Debug\menus-1.11.csproj.GenerateResource.Cache
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\menus-1.11\obj\Debug\menus-1.11.exe
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\menus-1.11\obj\Debug\menus-1.11.pdb
+C:\Users\harout.bezdjian\Documents\Visual Studio 2017\Projects\menus-1.11\obj\Debug\menus_1._11.Form1.resources
