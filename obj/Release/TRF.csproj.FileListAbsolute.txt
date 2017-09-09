@@ -1,0 +1,17 @@
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Release\TRF.exe.config
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Release\TRF.exe
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Release\TRF.pdb
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Release\Google.Protobuf.dll
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Release\MySql.Data.dll
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Release\Newtonsoft.Json.dll
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Release\Google.Protobuf.xml
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Release\Newtonsoft.Json.xml
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Release\TRF.AddUserForm.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Release\TRF.Install.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Release\TRF.Login.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Release\TRF.Properties.Resources.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Release\TRF.TRF.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Release\TRF.csproj.GenerateResource.Cache
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Release\TRF.exe
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Release\TRF.pdb
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Release\TRF.csprojResolveAssemblyReference.cache

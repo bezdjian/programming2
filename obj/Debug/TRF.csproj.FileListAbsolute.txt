@@ -1,0 +1,17 @@
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.csprojResolveAssemblyReference.cache
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.Install.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.Properties.Resources.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.csproj.GenerateResource.Cache
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\TRF.exe.config
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\TRF.exe
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\TRF.pdb
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.exe
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.pdb
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.TRF.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\Google.Protobuf.dll
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\MySql.Data.dll
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\Google.Protobuf.xml
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.Login.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.AddUserForm.resources
