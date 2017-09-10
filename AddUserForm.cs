@@ -14,15 +14,14 @@ namespace TRF
         {
             // initalizing the ID to update the user
             this.id = user.id;
-
             // Setting input texts in the form
             InitializeComponent(); // InitializeComponent() before setting new Text. Otherwise throws NullException.
             addName.Text = user.name;
             addLastName.Text = user.lastName;
             addAddress.Text = user.address;
             addTigerName.Text = user.tigername;
-
         }
+
         public AddUserForm()
         {
             InitializeComponent();

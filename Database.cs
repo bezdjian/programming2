@@ -74,6 +74,8 @@ namespace TRF
                 user.address= reader.GetString("address");
                 user.tigername = reader.GetString("tigername");
             }
+            // We get 'reader should be closed first' error if we do not close it.
+            reader.Close();
             return user;
         }
 
@@ -81,14 +83,13 @@ namespace TRF
         {
             try
             {
-                string getUserQuery = "DELETE FROM users WHERE id = " + id;
-                MySqlCommand command = new MySqlCommand(getUserQuery, this.connection);
+                string deleteUserQuery = "DELETE FROM users WHERE id = " + id;
+                MySqlCommand command = new MySqlCommand(deleteUserQuery, this.connection);
                 command.ExecuteNonQuery();
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Fel", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }
