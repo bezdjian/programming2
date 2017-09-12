@@ -77,7 +77,9 @@
             // 
             // saveConfig
             // 
-            this.saveConfig.Location = new System.Drawing.Point(168, 283);
+            this.saveConfig.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.saveConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveConfig.Location = new System.Drawing.Point(124, 283);
             this.saveConfig.Name = "saveConfig";
             this.saveConfig.Size = new System.Drawing.Size(75, 23);
             this.saveConfig.TabIndex = 6;

@@ -16,38 +16,56 @@ namespace TRF
 
         private void saveConfig_Click(object sender, EventArgs e)
         {
-            //Encrypt the password
-            //string password = Config.Encrypt(adPass.Text);
-            string password = Config.encryption(adPass.Text);
-            // Creating a list of Config class (1 row is one class) we might need more than a row.
-            List<Config> dbConfig = new List<Config>();
-            dbConfig.Add(new Config(
-                dbName.Text,         //db name from the input 
-                dbUser.Text,         //db user from the input
-                dbPass.Text,         //db password from the input
-                dbHost.Text,         //db host from the input
-                adUserName.Text,     //admin username from the input 
-                adUserFullName.Text, //admin fullname from the input
-                password             //admin password from the input
-            ));
+            // Validate fields
+            if (validate())
+            {
+                //Encrypt the passwords
+                string password = Config.encryption(adPass.Text);
+                // Creating a list of Config class (1 row is one class) we might need more than a row.
+                List<Config> dbConfig = new List<Config>();
+                dbConfig.Add(new Config(
+                    dbName.Text,         //db name from the input 
+                    dbUser.Text,         //db user from the input
+                    dbPass.Text,         //db password from the input
+                    dbHost.Text,         //db host from the input
+                    adUserName.Text,     //admin username from the input 
+                    adUserFullName.Text, //admin fullname from the input
+                    password             //admin password from the input
+                ));
 
-            // JsonConvert package has to be installed, I have mentioned in the project report.
-            string jsonConfig = JsonConvert.SerializeObject(dbConfig.ToArray());
+                // JsonConvert package has to be installed, I have mentioned in the project report.
+                string jsonConfig = JsonConvert.SerializeObject(dbConfig.ToArray());
 
-            //write json (DB info) to file
-            string path = Directory.GetCurrentDirectory(); // /bin/Debug folder..
-            File.WriteAllText(path + @"\config.json", jsonConfig);
+                //write json (DB info) to file
+                string path = Directory.GetCurrentDirectory(); // /bin/Debug folder..
+                File.WriteAllText(path + @"\config.json", jsonConfig);
 
-            //Initializing the DB.
-            Database database = new Database();
-            MySqlConnection conn = database.connect();
+                //Initializing the DB.
+                Database database = new Database();
+                MySqlConnection conn = database.connect();
 
-            //Create the tables
-            database.CreateTables(conn);
+                //Create the tables
+                database.CreateTables(conn);
 
-            this.Dispose(); // Dispose Install form to show the TRF app.
-            Login loginApp = new Login();
-            loginApp.ShowDialog();
+                this.Dispose(); // Dispose Install form to show the TRF app.
+                Login loginApp = new Login();
+                loginApp.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Var vänlig och fyll i alla fält", "Obligatoriska fält", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private bool validate()
+        {
+            if(String.IsNullOrEmpty(dbUser.Text) || String.IsNullOrEmpty(dbPass.Text) ||
+               String.IsNullOrEmpty(dbHost.Text) || String.IsNullOrEmpty(adUserFullName.Text) ||
+               String.IsNullOrEmpty(adUserName.Text) || String.IsNullOrEmpty(adPass.Text))
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

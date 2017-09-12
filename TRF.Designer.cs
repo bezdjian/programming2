@@ -164,9 +164,10 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(350, 19);
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Location = new System.Drawing.Point(350, 20);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(75, 21);
             this.btnClear.TabIndex = 3;
             this.btnClear.Text = "Rensa";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -174,9 +175,11 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(268, 19);
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnSearch.Location = new System.Drawing.Point(268, 20);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(75, 21);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Sök";
             this.btnSearch.UseVisualStyleBackColor = true;
