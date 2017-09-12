@@ -57,7 +57,7 @@ namespace TRF
                 comm.ExecuteNonQuery();
                 // After insertion, dispose this Form and back to TRF and reload DataGrid.
                 this.Dispose();
-                //Get the open TRF form and call DisplayData to refresh the usersDataGrid.
+                // Get the already opened TRF form and call DisplayData to refresh the usersDataGrid.
                 TRF trf = (TRF)Application.OpenForms["TRF"];
                 trf.DisplayData();
 

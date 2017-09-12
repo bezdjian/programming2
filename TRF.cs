@@ -37,7 +37,7 @@ namespace TRF
                     whereClause = "WHERE concat(firstname, ' ', lastname) like concat('%', replace('" + search + "', ' ', '%'), '%')";
                 }
                 // Select query.
-                string sql = "SELECT id as ID, CONCAT(u.firstname ,' ', u.lastname) as Medlem, u.address as Adress, u.tigername as Tiger FROM users u " + whereClause;
+                string sql = "SELECT id as ID, CONCAT(u.firstname ,' ', u.lastname) as Medlem, u.address as Adress, u.tigername as Tiger FROM users u " + whereClause + " ORDER BY ID DESC";
                 // Adapter for commandbuilder
                 sAdapter = new MySqlDataAdapter(sql, connection);
                 // Create a command builder
@@ -91,7 +91,7 @@ namespace TRF
                 DataGridViewRow row = usersDataGrid.SelectedRows[0];
                 // Setting the user ID from selected row.
                 int userid = (int) row.Cells["ID"].Value;
-                // Assign to User object.
+                // Get user's data and Assign to User object.
                 User user = database.getUserById(userid);
                 // Create a new AddUserForm with the User object to update.
                 AddUserForm updateUserForm = new AddUserForm(user);
@@ -136,6 +136,7 @@ namespace TRF
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            // Call the DisplayData method with the txtSearch value to search.
             DisplayData(txtSearch.Text);
 
         }
@@ -145,6 +146,12 @@ namespace TRF
             // Clear the search field text and DisplayData with empty string.
             txtSearch.Text = "";
             DisplayData();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            // Call DisplayData with the search field value as we type, like autocomplete.
+            DisplayData(txtSearch.Text);
         }
     }
 }

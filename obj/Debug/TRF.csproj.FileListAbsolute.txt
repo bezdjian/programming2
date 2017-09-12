@@ -15,3 +15,4 @@ C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\MySql.Data.dl
 C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\bin\Debug\Google.Protobuf.xml
 C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.Login.resources
 C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.AddUserForm.resources
+C:\Users\bezdj\Documents\Visual Studio 2017\Projects\TRF\obj\Debug\TRF.csproj.CoreCompileInputs.cache
