@@ -43,6 +43,8 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lable1 = new System.Windows.Forms.Label();
+            this.lblAdmin = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGrid)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -117,7 +119,7 @@
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(15, 523);
+            this.btnAdd.Location = new System.Drawing.Point(15, 521);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(70, 30);
             this.btnAdd.TabIndex = 2;
@@ -129,7 +131,7 @@
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(96, 523);
+            this.btnUpdate.Location = new System.Drawing.Point(96, 521);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(70, 30);
             this.btnUpdate.TabIndex = 3;
@@ -141,7 +143,7 @@
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Location = new System.Drawing.Point(177, 523);
+            this.btnDelete.Location = new System.Drawing.Point(177, 521);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(70, 30);
             this.btnDelete.TabIndex = 4;
@@ -155,7 +157,7 @@
             this.groupBox1.Controls.Add(this.btnSearch);
             this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(15, 35);
+            this.groupBox1.Location = new System.Drawing.Point(249, 37);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(451, 57);
             this.groupBox1.TabIndex = 5;
@@ -202,12 +204,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Medlem:";
             // 
+            // lable1
+            // 
+            this.lable1.AutoSize = true;
+            this.lable1.Location = new System.Drawing.Point(12, 57);
+            this.lable1.Name = "lable1";
+            this.lable1.Size = new System.Drawing.Size(42, 13);
+            this.lable1.TabIndex = 6;
+            this.lable1.Text = " Admin:";
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Location = new System.Drawing.Point(52, 57);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(10, 13);
+            this.lblAdmin.TabIndex = 7;
+            this.lblAdmin.Text = " ";
+            // 
             // TRF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(714, 561);
+            this.ClientSize = new System.Drawing.Size(714, 558);
+            this.Controls.Add(this.lblAdmin);
+            this.Controls.Add(this.lable1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -247,6 +269,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label lable1;
+        private System.Windows.Forms.Label lblAdmin;
     }
 }
 

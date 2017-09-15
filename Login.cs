@@ -32,7 +32,7 @@ namespace TRF
 
         private bool getEncryptedPassword(string username, string password)
         {
-            string path = Directory.GetCurrentDirectory(); // /bin/Debug folder where config.ini is stored
+            string path = Directory.GetCurrentDirectory(); // Folder where config.ini is stored
             using (StreamReader r = new StreamReader(path + "/config.json"))
             {
                 string json = r.ReadToEnd();

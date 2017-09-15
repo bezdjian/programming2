@@ -1,6 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
 using System;
 using System.Data;
+using System.IO;
 using System.Windows.Forms;
 
 namespace TRF
@@ -22,6 +24,7 @@ namespace TRF
             // On load TRF Form, connection to DB and DisplayData on the GridView.
             database = new Database();
             connection = database.connect();
+            lblAdmin.Text = getAdminFullname();
             DisplayData();
         }
 
@@ -152,6 +155,22 @@ namespace TRF
         {
             // Call DisplayData with the search field value as we type, like autocomplete.
             DisplayData(txtSearch.Text);
+        }
+
+        private string getAdminFullname()
+        {
+            // Maybe we should put this in another place, or make a better method. (?)
+            string path = Directory.GetCurrentDirectory(); // folder where config.ini is stored
+            using (StreamReader r = new StreamReader(path + "/config.json"))
+            {
+                string json = r.ReadToEnd();
+                dynamic array = JsonConvert.DeserializeObject(json);
+                foreach (var admininfo in array)
+                {
+                   return (string) admininfo.admin_fullname;
+                }
+            }
+            return "";
         }
     }
 }
