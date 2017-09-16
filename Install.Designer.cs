@@ -125,7 +125,6 @@
             this.adUserFullName.Name = "adUserFullName";
             this.adUserFullName.Size = new System.Drawing.Size(225, 20);
             this.adUserFullName.TabIndex = 18;
-            this.adUserFullName.Text = "Admin User";
             // 
             // adUserName
             // 
@@ -133,7 +132,6 @@
             this.adUserName.Name = "adUserName";
             this.adUserName.Size = new System.Drawing.Size(225, 20);
             this.adUserName.TabIndex = 17;
-            this.adUserName.Text = "admin";
             // 
             // label7
             // 
@@ -185,7 +183,6 @@
             this.dbHost.Name = "dbHost";
             this.dbHost.Size = new System.Drawing.Size(225, 20);
             this.dbHost.TabIndex = 16;
-            this.dbHost.Text = "127.0.0.1";
             // 
             // dbName
             // 
@@ -193,7 +190,6 @@
             this.dbName.Name = "dbName";
             this.dbName.Size = new System.Drawing.Size(225, 20);
             this.dbName.TabIndex = 15;
-            this.dbName.Text = "trf";
             // 
             // dbPass
             // 
@@ -202,7 +198,6 @@
             this.dbPass.PasswordChar = '*';
             this.dbPass.Size = new System.Drawing.Size(225, 20);
             this.dbPass.TabIndex = 14;
-            this.dbPass.Text = "root";
             // 
             // dbUser
             // 
@@ -210,7 +205,6 @@
             this.dbUser.Name = "dbUser";
             this.dbUser.Size = new System.Drawing.Size(225, 20);
             this.dbUser.TabIndex = 13;
-            this.dbUser.Text = "root";
             // 
             // label8
             // 
