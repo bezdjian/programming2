@@ -1,5 +1,5 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -31,7 +31,7 @@ namespace TRF
         {
             string StrQuery;
             Database database = new Database();
-            MySqlConnection conn = database.connect();
+            SqlConnection conn = database.connect();
 
             try
             {
@@ -53,7 +53,7 @@ namespace TRF
                                 "WHERE id = " + this.id;
                 }
 
-                MySqlCommand comm = new MySqlCommand(StrQuery, conn);
+                SqlCommand comm = new SqlCommand(StrQuery, conn);
                 comm.ExecuteNonQuery();
                 // After insertion, dispose this Form and back to TRF and reload DataGrid.
                 this.Dispose();

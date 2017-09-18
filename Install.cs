@@ -1,7 +1,7 @@
-﻿using MySql.Data.MySqlClient;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.IO;
 using System.Windows.Forms;
 
@@ -24,10 +24,6 @@ namespace TRF
                 // Creating a list of Config class (1 row is one class) we might need more than a row.
                 List<Config> dbConfig = new List<Config>();
                 dbConfig.Add(new Config(
-                    dbName.Text,         //db name from the input 
-                    dbUser.Text,         //db user from the input
-                    dbPass.Text,         //db password from the input
-                    dbHost.Text,         //db host from the input
                     adUserName.Text,     //admin username from the input 
                     adUserFullName.Text, //admin fullname from the input
                     password             //admin password from the input
@@ -42,10 +38,10 @@ namespace TRF
 
                 //Initializing the DB.
                 Database database = new Database();
-                MySqlConnection conn = database.connect();
+                SqlConnection conn = database.connect();
 
                 //Create the tables
-                database.CreateTables(conn);
+                //database.CreateTables(conn);
 
                 this.Dispose(); // Dispose Install form to show the TRF app.
                 Login loginApp = new Login();
@@ -59,9 +55,7 @@ namespace TRF
 
         private bool validate()
         {
-            if(String.IsNullOrEmpty(dbUser.Text) || String.IsNullOrEmpty(dbPass.Text) ||
-               String.IsNullOrEmpty(dbHost.Text) || String.IsNullOrEmpty(adUserFullName.Text) ||
-               String.IsNullOrEmpty(adUserName.Text) || String.IsNullOrEmpty(adPass.Text))
+            if(String.IsNullOrEmpty(adUserFullName.Text) || String.IsNullOrEmpty(adUserName.Text) || String.IsNullOrEmpty(adPass.Text))
             {
                 return false;
             }

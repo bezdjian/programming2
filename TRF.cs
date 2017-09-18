@@ -1,7 +1,7 @@
-﻿using MySql.Data.MySqlClient;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.IO;
 using System.Windows.Forms;
 
@@ -9,10 +9,10 @@ namespace TRF
 {
     public partial class TRF : Form
     {
-        MySqlDataAdapter sAdapter;
+        SqlDataAdapter sAdapter;
 
         Database database;
-        MySqlConnection connection;
+        SqlConnection connection;
 
         public TRF()
         {
@@ -42,9 +42,9 @@ namespace TRF
                 // Select query.
                 string sql = "SELECT id as ID, CONCAT(u.firstname ,' ', u.lastname) as Medlem, u.address as Adress, u.tigername as Tiger FROM users u " + whereClause + " ORDER BY ID DESC";
                 // Adapter for commandbuilder
-                sAdapter = new MySqlDataAdapter(sql, connection);
+                sAdapter = new SqlDataAdapter(sql, connection);
                 // Create a command builder
-                MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(sAdapter);
+                SqlCommandBuilder commandBuilder = new SqlCommandBuilder(sAdapter);
                 DataTable dt = new DataTable();
                 // Fill into DataTable
                 sAdapter.Fill(dt);
