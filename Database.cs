@@ -27,7 +27,7 @@ namespace TRF
 
         private String getDataBaseInfo()
         {
-            string path = Directory.GetCurrentDirectory(); // /bin/Debug folder where config.json is stored
+            string path = Directory.GetCurrentDirectory(); // folder where config.json is stored
             using (StreamReader r = new StreamReader(path + "/config.json"))
             {
                 string json = r.ReadToEnd();
