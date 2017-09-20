@@ -16,6 +16,8 @@ namespace TRF
             this.id = user.id;
             // Setting input texts in the form
             InitializeComponent(); // InitializeComponent() before setting new Text. Otherwise throws NullException.
+            
+            // Assign the values of the input fields.
             addName.Text = user.name;
             addLastName.Text = user.lastName;
             addAddress.Text = user.address;
@@ -35,7 +37,7 @@ namespace TRF
 
             try
             {
-                // If id is 0, it means we are adding
+                // If id is 0, it means we are adding, else, editing.
                 if(id == 0)
                 {
                     // Creating the insert query for the new user.

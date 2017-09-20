@@ -28,14 +28,6 @@ namespace TRF
             connection.Close();
         }
 
-        public void CreateTables(SqlConnection conn)
-        {
-            // Users table.
-            string createUsers = "CREATE TABLE IF NOT EXISTS users (id INT(11) NOT NULL AUTO_INCREMENT,firstname NVARCHAR(100), lastname NVARCHAR(100), address NVARCHAR(100), tigername NVARCHAR(100), primary key (id) )";
-            SqlCommand createUserTable = new SqlCommand(createUsers, conn);
-            createUserTable.ExecuteNonQuery();
-        }
-
         public User getUserById(int id)
         {
             string getUserQuery = "SELECT * FROM users WHERE id = " + id;

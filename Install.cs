@@ -40,16 +40,13 @@ namespace TRF
                 Database database = new Database();
                 SqlConnection conn = database.connect();
 
-                //Create the tables
-                //database.CreateTables(conn);
-
-                this.Dispose(); // Dispose Install form to show the TRF app.
+                this.Hide(); // Dispose Install form to show the TRF app.
                 Login loginApp = new Login();
                 loginApp.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Var vänlig och fyll i alla fält", "Obligatoriska fält", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Var vänlig och fyll i fälten", "Obligatoriska fält", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

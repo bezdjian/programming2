@@ -96,7 +96,7 @@ namespace TRF
                 int userid = (int) row.Cells["ID"].Value;
                 // Get user's data and Assign to User object.
                 User user = database.getUserById(userid);
-                // Create a new AddUserForm with the User object to update.
+                // Create a new AddUserForm with the User object to fill the input fields and update.
                 AddUserForm updateUserForm = new AddUserForm(user);
                 updateUserForm.ShowDialog();
             }
@@ -108,7 +108,7 @@ namespace TRF
 
         private void laggTillToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Use the same function as the lägg till buttton
+            // Use the same function as the lägg till button
             btnAdd_Click(sender, e);
         }
 
@@ -160,7 +160,7 @@ namespace TRF
         private string getAdminFullname()
         {
             // Maybe we should put this in another place, or make a better method. (?)
-            string path = Directory.GetCurrentDirectory(); // folder where config.ini is stored
+            string path = Directory.GetCurrentDirectory(); // folder where config.json is stored
             using (StreamReader r = new StreamReader(path + "/config.json"))
             {
                 string json = r.ReadToEnd();
