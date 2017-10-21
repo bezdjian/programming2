@@ -59,5 +59,19 @@ namespace TRF
                 MessageBox.Show(ex.ToString(), "Fel", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void deleteAllUsers()
+        {
+            try
+            {
+                string deleteUserQuery = "TRUNCATE TABLE users";
+                SqlCommand command = new SqlCommand(deleteUserQuery, this.connection);
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Fel", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

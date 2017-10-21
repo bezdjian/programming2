@@ -45,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lable1 = new System.Windows.Forms.Label();
             this.lblAdmin = new System.Windows.Forms.Label();
+            this.btnDeleteAll = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGrid)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -222,12 +223,24 @@
             this.lblAdmin.TabIndex = 7;
             this.lblAdmin.Text = " ";
             // 
+            // btnDeleteAll
+            // 
+            this.btnDeleteAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteAll.Location = new System.Drawing.Point(259, 521);
+            this.btnDeleteAll.Name = "btnDeleteAll";
+            this.btnDeleteAll.Size = new System.Drawing.Size(152, 30);
+            this.btnDeleteAll.TabIndex = 8;
+            this.btnDeleteAll.Text = "Radera alla medlemmar";
+            this.btnDeleteAll.UseVisualStyleBackColor = true;
+            this.btnDeleteAll.Click += new System.EventHandler(this.btnDeleteAll_Click);
+            // 
             // TRF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(714, 558);
+            this.Controls.Add(this.btnDeleteAll);
             this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.lable1);
             this.Controls.Add(this.groupBox1);
@@ -271,6 +284,7 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label lable1;
         private System.Windows.Forms.Label lblAdmin;
+        private System.Windows.Forms.Button btnDeleteAll;
     }
 }
 

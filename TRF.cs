@@ -37,6 +37,7 @@ namespace TRF
                 string whereClause = "";
                 if(search != "")
                 {
+                    // Concatinating the firstname and last name so that the search field's value searches on both firstname and lastname.
                     whereClause = "WHERE concat(firstname, ' ', lastname) like concat('%', replace('" + search + "', ' ', '%'), '%')";
                 }
                 // Select query.
@@ -52,7 +53,6 @@ namespace TRF
                 usersDataGrid.DataSource = dt;
                 // Make usersDataGrid columns with 100%
                 usersDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                //connection.Close();
             }
             catch (Exception ex)
             {
@@ -94,9 +94,9 @@ namespace TRF
                 DataGridViewRow row = usersDataGrid.SelectedRows[0];
                 // Setting the user ID from selected row.
                 int userid = (int) row.Cells["ID"].Value;
-                // Get user's data and Assign to User object.
+                // Get the user's data and assign to User object.
                 User user = database.getUserById(userid);
-                // Create a new AddUserForm with the User object to fill the input fields and update.
+                // Create a new AddUserForm with the User object to fill the input fields to update.
                 AddUserForm updateUserForm = new AddUserForm(user);
                 updateUserForm.ShowDialog();
             }
@@ -114,10 +114,6 @@ namespace TRF
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            // Connecting to DB. maybe it should be open the whole time (?)
-            Database database = new Database();
-            database.connect();
-
             // If the whole row is selected
             if (usersDataGrid.SelectedRows.Count != 0)
             {
@@ -128,6 +124,7 @@ namespace TRF
                     // Setting the user ID from selected row.
                     int userid = (int)row.Cells["ID"].Value;
                     database.deleteUserById(userid);
+                    // Refresh the grid table.
                     DisplayData();
                 }
             }
@@ -153,7 +150,7 @@ namespace TRF
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            // Call DisplayData with the search field value as we type, like autocomplete.
+            // Call DisplayData with the search field value as we type.
             DisplayData(txtSearch.Text);
         }
 
@@ -171,6 +168,26 @@ namespace TRF
                 }
             }
             return "";
+        }
+
+        private void btnDeleteAll_Click(object sender, EventArgs e)
+        {
+            // Check if there are any rows in the table.
+            if(usersDataGrid.Rows.Count > 0)
+            {
+                DialogResult result = MessageBox.Show("Är du säker att du vill radera alla medlemmar?", "Radera alla", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    // Delete all users.
+                    database.deleteAllUsers();
+                    // Refresh grid table.
+                    DisplayData();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Det finns inga medlemmar att radera", "Radera alla", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }           
         }
     }
 }

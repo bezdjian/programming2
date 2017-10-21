@@ -10,6 +10,7 @@ namespace TRF
         // User id so we can update.
         int id = 0;
 
+        // This constructor takes an User object to update.
         public AddUserForm(User user)
         {
             // initalizing the ID to update the user
@@ -24,6 +25,7 @@ namespace TRF
             addTigerName.Text = user.tigername;
         }
 
+        // Cunstructor with empty parameter is to add new user.
         public AddUserForm()
         {
             InitializeComponent();

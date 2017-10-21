@@ -16,7 +16,7 @@ namespace TRF
 
         private void saveConfig_Click(object sender, EventArgs e)
         {
-            // Validate fields
+            // Validate fields, check if the fields are not empty or null.
             if (validate())
             {
                 //Encrypt the passwords
@@ -28,12 +28,12 @@ namespace TRF
                     adUserFullName.Text, //admin fullname from the input
                     password             //admin password from the input
                 ));
-
+                
                 // JsonConvert package has to be installed, I have mentioned in the project report.
                 string jsonConfig = JsonConvert.SerializeObject(dbConfig.ToArray());
 
-                //write json (DB info) to file
-                string path = Directory.GetCurrentDirectory(); // /bin/Debug folder..
+                //write json to file.
+                string path = Directory.GetCurrentDirectory(); // /bin/Debug OR /bin/Release folder..
                 File.WriteAllText(path + @"\config.json", jsonConfig);
 
                 //Initializing the DB.

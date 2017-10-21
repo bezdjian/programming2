@@ -15,15 +15,15 @@ namespace TRF
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Checking if config.json file exists for the database & admin information.
+            //Checking if config.json file exists for input Admin information.
             if (!File.Exists("config.json"))
             {
                 Install installDB = new Install(); // create Install form.
-                installDB.ShowDialog(); // Show the Install form for DB & admin informations.
+                installDB.ShowDialog(); // Show the Install form Admin informations.
             }
             else
             {
-                // If there is a config.json file, then run the Login applicaion.
+                // There is a config.json file, then run the Login form.
                 Application.Run(new Login());
             }
         }

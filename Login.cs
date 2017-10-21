@@ -14,6 +14,7 @@ namespace TRF
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            // Get the admin username and password.
             string username = adLoginUser.Text;
             string password = adLoginPass.Text;
 
@@ -43,11 +44,11 @@ namespace TRF
                     {
                         // Encrypt the password from Login so we can compare with the one in the config file.
                         string encryptPassword = Config.encryption(password);
-                        // assing to a variable and make sure its a string.
+                        // assign to a variable and make sure its a string.
                         string adminPassword = (string) admininfo.admin_password;
                         if (encryptPassword == adminPassword)
                         {
-                            return true; // Password correct, return true to change the form to TRF.                       
+                            return true; // Password correct, return true to log in.  
                         }
                     }
                 }
